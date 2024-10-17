@@ -1,0 +1,56 @@
+#featured{
+  grid-area: featured;
+  padding-top: 1rem; 
+  #feature{
+    margin-top: 1rem;
+  }
+  & .img-first{
+    height: 31.25rem;
+    object-fit: cover;
+ }
+  img{
+    height: 100%;
+    object-fit: cover;
+   
+  }
+  .card{
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    &::before{
+      content: "";
+      position: absolute;
+      top: 50%;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        transparent 0%,
+        #020617 100%
+      );
+    }
+    figcaption{
+      position: absolute;
+      bottom: 0;
+      padding: 24px;
+      &:has(.text-lg){
+        padding: 12px;
+      }
+      h2,h3{
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+@media (width >= 80em){
+  #featured{
+    padding-top: 2.5rem;
+    display: grid;
+    grid-auto-flow: column;
+    & #feature{
+      display: grid;
+      grid-template-columns:1fr 1fr;
+      margin-top: 0;
+    }
+  }
+}

@@ -30,7 +30,7 @@
 
   --py-lg: 1rem;
   --px-base:1rem;
-  --px-lg: 1.5rem;
+  --px-lg: 1rem;
 }
 
 html{
@@ -55,10 +55,11 @@ h1{
   line-height: 1.35;
 }
 h2{
-  font-size: var(--fs-base);
+  font-size: var(--fs-lg);
   line-height: 1.4;
 }
 h3{
+  font-size: var(--fs-md);
   line-height: 1.4;
 }
 span{
@@ -71,4 +72,25 @@ a{
 }
 a:hover{
   color: var(--brand-color-light);
+}
+
+.content-tag{
+  display: inline-block;
+  background-color: var(--brand-color-dark);
+  padding: 0.25rem .5rem;
+  border-radius: 0.25rem;
+  line-height: 1.2;
+  font-family: var(--ff-sans);
+  font-size:  0.625rem ;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-color-primary);
+  box-shadow: 0px 4px 16px rgb(2, 6, 23,0.25);
+}
+
+@media (width >= 80em){
+  :root{
+    --px-lg: 2rem;
+  }
 }
