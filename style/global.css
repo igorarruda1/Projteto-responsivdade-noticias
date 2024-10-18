@@ -46,6 +46,14 @@ html{
 body{
   background-color: var(--bg-color);
 }
+main{
+  gap: 2rem;
+  grid-template-columns: 2fr 1.4fr ;
+  grid-template-areas:
+   "featured featured"
+   "weekly weekly"
+   "ai aside";
+}
 
 h1,h2,h3{
   font-weight: var(--fw-ebold);
@@ -64,7 +72,10 @@ h3{
 }
 span{
   line-height: 1.45;
-  font-weight: var(--fw-sbold);
+  font-weight: var(--fw-ebold);
+}
+p{
+  font-size: var(--fs-md);
 }
 a{
   text-decoration: none;
@@ -92,5 +103,9 @@ a:hover{
 @media (width >= 80em){
   :root{
     --px-lg: 2rem;
+  }
+
+  main{
+    row-gap: 80px;
   }
 }
