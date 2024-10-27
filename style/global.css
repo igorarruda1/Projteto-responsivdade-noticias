@@ -52,7 +52,7 @@ main{
   grid-template-areas:
    "featured featured"
    "weekly weekly"
-   "ai aside";
+   "ai ai";
 }
 
 h1,h2,h3{
@@ -107,5 +107,9 @@ a:hover{
 
   main{
     row-gap: 80px;
+    grid-template-areas:
+   "featured featured"
+   "weekly weekly"
+   "ai aside";
   }
 }

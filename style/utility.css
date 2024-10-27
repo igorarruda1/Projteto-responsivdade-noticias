@@ -17,6 +17,13 @@
 .gap-1{
   gap: 1rem;
 }
+.gap-2{
+  gap: 2rem;
+}
+
+.h3-s{
+  font-weight: var(--fw-sbold);
+}
 .py-lg{
   padding-block: var(--py-lg);
 }
