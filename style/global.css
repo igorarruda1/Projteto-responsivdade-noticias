@@ -52,7 +52,8 @@ main{
   grid-template-areas:
    "featured featured"
    "weekly weekly"
-   "ai ai";
+   "ai ai"
+   "aside aside";
 }
 
 h1,h2,h3{

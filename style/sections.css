@@ -110,7 +110,30 @@ section header{
 
 }
 }
-
+aside{
+  grid-area: aside;
+    #ids{
+      & img{
+        width: 100%;
+      }
+      position: relative;
+      & .close{
+        right: .5rem;
+        top: .5rem;
+        position: absolute;
+        background-color: white;
+        width: 1.25rem;
+        height: 1.25rem;
+      span{
+        position: absolute;
+        background-image: url(../assets/icons/X.svg);
+        width: 1rem;
+        height: 1rem;
+        
+      }
+    }
+    }
+}
 
 @media (width >= 80em){
   #featured{
@@ -147,4 +170,7 @@ section header{
         }
       }
    }  
+   #aside{
+    grid-area: aside;
+  }
  }
