@@ -48,6 +48,7 @@ body{
 }
 main{
   gap: 2rem;
+  margin-bottom: 2.5rem;
   grid-template-columns: 2fr 1.4fr ;
   grid-template-areas:
    "featured featured"
@@ -107,6 +108,7 @@ a:hover{
   }
 
   main{
+    margin-bottom: 5rem;
     row-gap: 80px;
     grid-template-areas:
    "featured featured"

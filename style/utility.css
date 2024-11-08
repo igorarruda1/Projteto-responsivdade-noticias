@@ -31,8 +31,9 @@
   padding-inline: var(--px-lg);
 }
 .text-xl{
-  font-size: var(--fs-base);
+  font-size: var(--fs-md);
   line-height: 1.4;
+
 }
 
 .desktop-only{
